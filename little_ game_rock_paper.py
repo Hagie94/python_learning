@@ -3,6 +3,7 @@ import random
 def get_choices():
     player_choice = input("Entrer votre choix [ pierre,papier,ciseaux ] : ")
     choix_ordi = ["pierre","papier","ciseaux"]
+    #Le cpu va choisir parmi les elements de la liste par hasard
     computer_choice = random.choice(choix_ordi)
     choices = {"player": player_choice, "computer": computer_choice}
     return choices
